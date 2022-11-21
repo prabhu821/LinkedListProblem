@@ -15,6 +15,9 @@ namespace LinkedListProblem
             int a = list.Search(30);
             list.InsertAtParticularPosition(a + 1, 40);
             list.Display();
+            list.DeleteNodeAtParticularPosition(2);
+            list.Size();
+            list.Display();
 
 
 
