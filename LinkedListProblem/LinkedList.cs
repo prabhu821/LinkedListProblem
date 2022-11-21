@@ -105,12 +105,30 @@ namespace LinkedListProblem
                 return null;
             }
             Node NewNode = head;
-            while(NewNode.next.next!==null)
+            while(NewNode.next.next!=null)
             {
                 NewNode = NewNode.next;
             }
             NewNode.next = null;
             return head;
+        }
+
+        internal int Search(int value)
+        {
+            Node node = this.head;
+            if (node == null)
+                return -1;
+            int count = 0;
+            while(node!=null)
+            {
+                if(node.data==value)
+                {
+                    return count;
+                }
+                node = node.next;
+                count++;
+            }
+            return count;
         }
 
         internal void DeleteNodeAtParticularPosition(int position)

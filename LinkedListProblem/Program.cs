@@ -8,11 +8,13 @@ namespace LinkedListProblem
             Console.WriteLine("Welcome tp Linked List operation");
             
             LinkedList list = new LinkedList();
-            //list.Add(50);
-            //list.Add(70);
-            //list.Add(30);
-            //list.Display();
-            
+            list.Add(50);
+            list.Add(70);
+            list.Add(30);
+            list.Display();
+            int a = list.Search(30);
+            list.InsertAtParticularPosition(a + 1, 40);
+            list.Display();
 
 
 
