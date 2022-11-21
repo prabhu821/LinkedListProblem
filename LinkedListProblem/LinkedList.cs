@@ -84,6 +84,15 @@ namespace LinkedListProblem
             prev.next = newestNode;
             return this.head;
         }
+
+        internal void RemoveFirstNode()
+        {
+            if(this.head==null)
+            {
+                Console.WriteLine("Linked List is empty");
+            }
+            this.head = this.head.next;
+        }
         internal void DeleteNodeAtParticularPosition(int position)
         {
             if(this.head==null)
