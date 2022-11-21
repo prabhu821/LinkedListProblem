@@ -6,10 +6,16 @@ namespace LinkedListProblem
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome tp Linked List operation");
+            
             LinkedList list = new LinkedList();
-            list.Add(50);
-            list.Add(70);
-            list.Add(30);
+            //list.Add(50);
+            //list.Add(70);
+            //list.Add(30);
+            //list.Display();
+            
+
+
+
             //    LinkedListStack stack =new LinkedListStack();
             //    stack.Push(50);
             //    stack.Push(70);
@@ -18,6 +24,8 @@ namespace LinkedListProblem
             //    stack.Peek();
             //    stack.Pop();
             //    stack.Display();
+
+
 
             //    LinkedListQueue queue = new LinkedListQueue();
             //    queue.Enqueue(50);
