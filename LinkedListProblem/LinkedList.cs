@@ -150,20 +150,8 @@ namespace LinkedListProblem
             }
             Node next = temp.next.next;
             temp.next = next;
-            Size();
+            
         }
-        internal void Size()
-        {
-            Node temp = this.head;
-            int count = 0;
-            if(temp==null)
-            {
-                Console.WriteLine("LinkedList is empty");
-            }
-            if(temp!=null)
-            {
-                Console.WriteLine("");
-            }
-        }
+        
     }
 }
