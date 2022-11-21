@@ -93,6 +93,26 @@ namespace LinkedListProblem
             }
             this.head = this.head.next;
         }
+
+        internal Node RemoveLastNode()
+        {
+            if(head==null)
+            {
+                return null;
+            }
+            if(head.next==null)
+            {
+                return null;
+            }
+            Node NewNode = head;
+            while(NewNode.next.next!==null)
+            {
+                NewNode = NewNode.next;
+            }
+            NewNode.next = null;
+            return head;
+        }
+
         internal void DeleteNodeAtParticularPosition(int position)
         {
             if(this.head==null)
