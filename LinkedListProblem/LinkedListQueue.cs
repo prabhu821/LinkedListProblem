@@ -41,6 +41,17 @@ namespace LinkedListProblem
                 temp = temp.next;
             }
         }
-        
+        internal void Dequeue()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Queue is empty, Deletion is not possible");
+                return;
+            }
+            else
+            {
+                this.head = this.head.next;
+            }
+        }
     }
 }
