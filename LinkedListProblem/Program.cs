@@ -26,9 +26,9 @@ namespace LinkedListProblem
               stack.Push(70);
               stack.Push(30);
               stack.Display();
-            //  stack.Peek();
-            //  stack.Pop();
-            //  stack.Display();
+              stack.Peek();
+              stack.Pop();
+              stack.Display();
 
 
 
