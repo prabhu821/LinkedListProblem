@@ -45,4 +45,20 @@ public class LinkedList
         }
         Console.WriteLine();
     }
+
+    //UC3-ADD IN REVERSE ORDER
+    public void AddInReverseOrder(int data)
+    {
+        Node newNode = new Node(data);
+        if (this.head == null)
+        {
+            this.head = newNode;
+        }
+        else
+        {
+            Node temp = this.head;
+            head = newNode;
+            head.next = temp;
+        }
+    }
 }
