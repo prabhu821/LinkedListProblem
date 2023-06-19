@@ -10,7 +10,7 @@
             while (flag)
             {
                 Console.WriteLine("\nSelect the operation to perform \n1.Create Linked List \n2.Display \n3.Add In Reverse Order " +
-                     "\n4.Add At Particular Position \n5.Exit");
+                    "\n4.Add At Particular Position \n5.Remove First Node \n6.Exit");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -33,6 +33,9 @@
                         int pos = Convert.ToInt32(Console.ReadLine());
                         int value = Convert.ToInt32(Console.ReadLine());
                         list.InsertAtParticularPosition(pos, value);
+                        break;
+                    case 5:
+                        list.RemoveFirstNode();
                         break;
                     default:
                         flag = false;
