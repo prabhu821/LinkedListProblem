@@ -10,7 +10,7 @@
             while (flag)
             {
                 Console.WriteLine("\nSelect the operation to perform \n1.Create Linked List \n2.Display \n3.Add In Reverse Order " +
-                     "\n4.Add At Particular Position \n5.Remove First Node \n6.Remove Last Node \n7.Search \n8.Exit");
+                    "\n4.Insert At Particular Position \n5.Remove First Node \n6.Remove Last Node \n7.Search \n8.Size of List \n9.Exit");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -45,6 +45,9 @@
                         int option = Convert.ToInt32(Console.ReadLine());
                         int find = list.Search(option);
                         Console.WriteLine("The Position of Node in LinkedList is " + find);
+                        break;
+                    case 8:
+                        list.Size();
                         break;
                     default:
                         flag = false;
