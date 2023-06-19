@@ -10,8 +10,8 @@
             while (flag)
             {
                 Console.WriteLine("\nSelect the operation to perform \n1.Create Linked List \n2.Display \n3.Add In Reverse Order " +
-                     "\n4.Add At Particular Position \n5.Remove First Node \n6.Remove Last Node \n7.Search \n8.Size of List " +
-                     "\n9.Insert at Particular Position \n10.Exit");
+                    "\n4.Add At Particular Position \n5.Remove First Node \n6.Remove Last Node \n7.Search \n8.Size of List " +
+                    "\n9.Insert at Particular Position \n10.Delete Node At Particular Position \n11.Exit");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -57,6 +57,11 @@
                         Console.WriteLine("Enter the value to Insert");
                         int data = Convert.ToInt32(Console.ReadLine());
                         list.InsertAtParticuarPosition(position + 1, data);
+                        break;
+                    case 10:
+                        Console.WriteLine("Enter the value present in List to Delete");
+                        int delete = Convert.ToInt32(Console.ReadLine());
+                        list.DeleteNodeAtParticularPosition(list.Search(delete));
                         break;
                     default:
                         flag = false;
