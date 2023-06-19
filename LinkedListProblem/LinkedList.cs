@@ -29,4 +29,20 @@ public class LinkedList
         }
         Console.WriteLine("{0} inserted into linked list", node.data);
     }
+
+    //UC2-Display List
+    public void Display()
+    {
+        Node current = head;
+        while (current != null)
+        {
+            Console.Write(current.data);
+            if (current.next != null)
+            {
+                Console.Write("->");
+            }
+            current = current.next;
+        }
+        Console.WriteLine();
+    }
 }
